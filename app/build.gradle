@@ -1,8 +1,9 @@
 plugins { id 'com.android.application' }
 android {
- namespace 'gal.rodrigosambade.transformerlab'
+ namespace 'dev.rodrigo.media3editor'
  compileSdk { version = release(37) { minorApiLevel = 1 } }
- defaultConfig { applicationId 'gal.rodrigosambade.transformerlab'; minSdk 23; targetSdk 37; versionCode 1; versionName '1.0' }
+ defaultConfig { applicationId 'dev.rodrigo.media3editor'; minSdk 23; targetSdk 37; versionCode 1; versionName '1.0' }
  compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
+ testOptions { unitTests.returnDefaultValues = true }
 }
-dependencies { implementation 'androidx.appcompat:appcompat:1.7.1'; implementation 'androidx.core:core:1.17.0'; implementation 'com.google.android.material:material:1.12.0'; implementation 'androidx.media3:media3-transformer:1.11.0'; implementation 'androidx.media3:media3-effect:1.11.0'; implementation 'androidx.media3:media3-common:1.11.0'; implementation 'com.google.guava:guava:33.4.8-android' }
+dependencies { implementation 'androidx.core:core:1.19.0'; implementation 'androidx.activity:activity:1.13.0'; implementation 'androidx.media3:media3-transformer:1.10.1'; implementation 'androidx.media3:media3-effect:1.10.1'; testImplementation 'junit:junit:4.13.2' }

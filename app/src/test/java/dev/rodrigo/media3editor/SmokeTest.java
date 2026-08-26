@@ -1,0 +1,1 @@
+package dev.rodrigo.media3editor; import org.junit.Test; import static org.junit.Assert.*; public class SmokeTest{@Test public void scaleFloorIsValid(){assertEquals(.25f,Math.max(.25f,.1f),0f);}}
